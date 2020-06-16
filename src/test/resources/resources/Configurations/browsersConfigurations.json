@@ -1,0 +1,12 @@
+ {
+  "chrome_win_local": {
+    "browser": "chrome",
+    "platform": "windows",
+    "use_hub": false
+  },
+    "firefox_win_local": {
+    "browser": "firefox",
+    "platform": "windows",
+    "use_hub": false
+  }
+  }

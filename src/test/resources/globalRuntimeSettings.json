@@ -1,0 +1,9 @@
+{
+	"browser_config": {
+		"config": "chrome_win_local",
+		"browser_paths": {
+			"chromedriver_location": "D:\\Software\\chromedriver_win32\\chromedriver.exe",
+			"firefoxdriver_location": "/selenium/geckodriver"
+		}
+	}
+}

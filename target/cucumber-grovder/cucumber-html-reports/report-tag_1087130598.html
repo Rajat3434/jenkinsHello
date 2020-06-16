@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Tag: @Latest</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>CucumberWebGui</td>
+              <td>1</td>
+            <td>12 Jun 2020, 00:57</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@Latest</td>
+          <td >0</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >9</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">10</td>
+
+          <td >0</td>
+          <td  class="failed"    >1</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="15456000000">15.456</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_765344472.html">Validating Context Selection feature with different users</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_1087130598.html">@Latest</a>
+      </div>
+
+  
+  <span class="lead-duration duration">15.456</span>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">19 Context selection of health bill with 1 address multiple roles mutiple referrals and associate provider with referral programs for Clinic user</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details  in ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Given</span>
+  <span class="name"><span class="argument">Individual</span> users <span class="argument">with 1 address multiple role multiple referrals </span> will be able to access Context selection page in <span class="argument">eProvider Reporting</span> in Provider portal</span>
+  
+  <span class="lead-duration duration">15.449</span>
+
+</div>
+
+        
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>org.openqa.selenium.SessionNotCreatedException:</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
+  (Session info: chrome=79.0.3945.117)
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'XAV-602000370', ip: '192.168.1.22', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162'
+Driver info: driver.version: ChromeDriver
+selenide.url: https://ssoqa.dev.emergis/oam/server/obrareq.cgi?encquery%3Di1zHzJDCucYEfHHvi4oYtH6NQziPrRJ2Nfp3fUVvGq6fMhbZN56oZy43V3162OsJm2IWVLN60Tr3V2xrAdWHJKuxZe3N7IMZ9%2F%2B1cdE9piem5qFBuuITcCF5Do2Y1kD4l1NTXm%2BGWM6zga9CGhBPtt9CloyIDrBCOlChFge2gvVi8gGMLOtfLTi3I65l9%2FxAjjd8NgJvCVV0sNFJdaFWSpTD5JIirvXJIqz7eAi2BXc42NcZsGnv7SOO8TTNe%2B3tDhRQtmxF2wwv6g1bvzSSXcKWzzRosk%2F26u8Jto%2B5gPn4fUVeIf75oydTPUFlblI%2B%20agentid%3Dwebgate11g%20ver%3D1%20crmethod%3D2
+selenide.baseUrl: http://localhost:8080
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00AFA113+1548563]
+	Ordinal0 [0x00A7DDA1+1039777]
+	Ordinal0 [0x009FE32E+516910]
+	Ordinal0 [0x009F8012+491538]
+	Ordinal0 [0x009F86EB+493291]
+	Ordinal0 [0x009F9855+497749]
+	Ordinal0 [0x009F5885+481413]
+	Ordinal0 [0x009FF0D0+520400]
+	Ordinal0 [0x009AC030+180272]
+	Ordinal0 [0x009AB59D+177565]
+	Ordinal0 [0x009A95FB+169467]
+	Ordinal0 [0x0099160A+71178]
+	Ordinal0 [0x00992690+75408]
+	Ordinal0 [0x00992629+75305]
+	Ordinal0 [0x00A971B7+1143223]
+	GetHandleVerifier [0x00B92B46+507814]
+	GetHandleVerifier [0x00B92864+507076]
+	GetHandleVerifier [0x00B99F47+537511]
+	GetHandleVerifier [0x00B93402+510050]
+	Ordinal0 [0x00A8F29C+1110684]
+	Ordinal0 [0x00A9938B+1151883]
+	Ordinal0 [0x00A994F3+1152243]
+	Ordinal0 [0x00A983F5+1147893]
+	BaseThreadInitThunk [0x77566359+25]
+	RtlGetAppContainerNamedObjectPath [0x777A7A94+228]
+	RtlGetAppContainerNamedObjectPath [0x777A7A64+180]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$22(ProtocolHandshake.java:365)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:368)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:159)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:137)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:184)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:148)
+	at com.codeborne.selenide.webdriver.WebDriverFactory.createChromeDriver(WebDriverFactory.java:168)
+	at com.codeborne.selenide.webdriver.WebDriverFactory.createWebDriver(WebDriverFactory.java:48)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.createDriver(WebDriverThreadLocalContainer.java:242)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getAndCheckWebDriver(WebDriverThreadLocalContainer.java:113)
+	at com.codeborne.selenide.WebDriverRunner.getAndCheckWebDriver(WebDriverRunner.java:136)
+	at com.codeborne.selenide.impl.Navigator.navigateToAbsoluteUrl(Navigator.java:69)
+	at com.codeborne.selenide.impl.Navigator.open(Navigator.java:32)
+	at com.codeborne.selenide.Selenide.open(Selenide.java:79)
+	at com.codeborne.selenide.Selenide.open(Selenide.java:53)
+	at stepDefinitions.StepDefinition.userPortal(StepDefinition.java:63)
+	at &#10045;.Individual users with 1 address multiple role multiple referrals  will be able to access Context selection page in eProvider Reporting in Provider portal(file:///C:/Users/Rajat.Chouhan/Context-Selection%20Workspace/Health-HSM-TA/Context-Selection/./src/test/resources/context.feature:325)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">Login with <span class="argument">BL200064191</span> or <span class="argument">Welcome2</span> user in provider portal</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">In Home page Click on WSIB Link</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">In WSIB Home page Click on <span class="argument">eProvider Reporting</span> application</span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">Should be able to access <span class="argument">eProvider Reporting</span> in WSIB in provider portal</span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Should be able to access <span class="argument">eProvider Reporting</span> and see location <span class="argument">83 WOODSEND RUN BRAMPTON ON L6Y 4G9 CANADA</span> role <span class="argument">Facility - Radiology</span> and Referral Program <span class="argument">Occupational Health Assessment</span></span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Should be able to access <span class="argument">eProvider Reporting</span> and see location <span class="argument">83 WOODSEND RUN BRAMPTON ON L6Y 4G9 CANADA</span> role <span class="argument">Facility - Radiology</span> and Referral Program <span class="argument">SC - Medication Substance</span></span>
+  
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Should be able to access <span class="argument">eProvider Reporting</span> and see location <span class="argument">83 WOODSEND RUN BRAMPTON ON L6Y 4G9 CANADA</span> role <span class="argument">Facility - Specialized Rehabilitation</span> and Referral Program <span class="argument">External Assessment Services</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Should be able to access <span class="argument">eProvider Reporting</span> and see location <span class="argument">83 WOODSEND RUN BRAMPTON ON L6Y 4G9 CANADA</span> role <span class="argument">Facility - Specialized Rehabilitation</span> and Referral Program <span class="argument">No Program</span></span>
+  
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Should be able to access <span class="argument">eProvider Reporting</span> and see location <span class="argument">83 WOODSEND RUN BRAMPTON ON L6Y 4G9 CANADA</span> role <span class="argument">Facility - Specialized Rehabilitation</span> and Referral Program <span class="argument">Phys. Ref. - Musculoskeletal</span></span>
+  
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+        
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

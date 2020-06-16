@@ -1,0 +1,206 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 541000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Open browser",
+            "match": {
+              "location": "stepDefinitions.StepDefinition.openBroswer()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-15T19:05:58.648Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.Before()"
+            }
+          }
+        ],
+        "line": 355,
+        "name": "20 Context selection health bill  by Head Office user",
+        "description": "",
+        "id": "validating-context-selection-feature-with-different-users;20-context-selection-health-bill--by-head-office-user;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 959000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.AfterS()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 16641000000,
+              "status": "passed"
+            },
+            "line": 346,
+            "name": "Head Office users with 1 address multiple role multiple referrals  will be able to access Context selection page in Health Bill Submission in Provider portal",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Head Office",
+                  "offset": 0
+                },
+                {
+                  "val": "with 1 address multiple role multiple referrals ",
+                  "offset": 18
+                },
+                {
+                  "val": "Health Bill Submission",
+                  "offset": 116
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.userPortal(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 17272000000,
+              "status": "passed"
+            },
+            "line": 347,
+            "name": "Login with DM200062532 or Welcome2 user in provider portal",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DM200062532",
+                  "offset": 11
+                },
+                {
+                  "val": "Welcome2",
+                  "offset": 26
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.login(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8941000000,
+              "status": "passed"
+            },
+            "line": 348,
+            "name": "In Home page Click on WSIB Link",
+            "match": {
+              "location": "stepDefinitions.StepDefinition.clickWsibLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4352000000,
+              "status": "passed"
+            },
+            "line": 349,
+            "name": "In WSIB Home page Click on Health Bill Submission application",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Health Bill Submission",
+                  "offset": 27
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.clickOnApplication(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 727000000,
+              "status": "passed"
+            },
+            "line": 350,
+            "name": "Should be able to access Health Bill Submission in WSIB in provider portal",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Health Bill Submission",
+                  "offset": 25
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.verfiyWsibPortal(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7777000000,
+              "status": "passed"
+            },
+            "line": 351,
+            "name": "Should be able to access Health Bill Submission and see location 61 PEARLDALE AVE NORTH YORK ON L6W 3G6 CANADA role Facility - Rehabilitation serviceProvider iowon manas Independent Role Chiropractor and Independent Referral No Program",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Health Bill Submission",
+                  "offset": 25
+                },
+                {
+                  "val": "61 PEARLDALE AVE NORTH YORK ON L6W 3G6 CANADA",
+                  "offset": 65
+                },
+                {
+                  "val": "Facility - Rehabilitation",
+                  "offset": 116
+                },
+                {
+                  "val": "iowon manas",
+                  "offset": 158
+                },
+                {
+                  "val": "Chiropractor",
+                  "offset": 187
+                },
+                {
+                  "val": "No Program",
+                  "offset": 225
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.verifyLocationRoleServiceProviderRoleProgramReferralProgram(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@hold"
+          }
+        ]
+      }
+    ],
+    "name": "Validating Context Selection feature with different users",
+    "description": "",
+    "id": "validating-context-selection-feature-with-different-users",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/context.feature",
+    "tags": []
+  }
+]

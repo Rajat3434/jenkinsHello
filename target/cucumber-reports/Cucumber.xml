@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="57.728">
+<testcase classname="Validating Context Selection feature with different users" name="20 Context selection health bill  by Head Office user" time="57.317">
+<system-out><![CDATA[Given Open browser..........................................................passed
+Given Head Office users with 1 address multiple role multiple referrals  will be able to access Context selection page in Health Bill Submission in Provider portal.passed
+When Login with DM200062532 or Welcome2 user in provider portal.............passed
+And In Home page Click on WSIB Link.........................................passed
+And In WSIB Home page Click on Health Bill Submission application...........passed
+Then Should be able to access Health Bill Submission in WSIB in provider portal.passed
+And Should be able to access Health Bill Submission and see location 61 PEARLDALE AVE NORTH YORK ON L6W 3G6 CANADA role Facility - Rehabilitation serviceProvider iowon manas Independent Role Chiropractor and Independent Referral No Program.passed
+]]></system-out>
+</testcase>
+</testsuite>
